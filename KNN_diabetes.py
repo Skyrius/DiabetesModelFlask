@@ -9,7 +9,6 @@ import numpy as np
 import pandas as pd
 import pickle
 import requests
-import json
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
@@ -378,7 +377,8 @@ pickle.dump(knn, open('KNN_diabetes.pkl','wb'))
 
 model = pickle.load(open('KNN_diabetes.pkl','rb'))
 #test the model with the same test data from before
-result = model.score(X_test,y_test)
+#result = model.predict([[0.639947, 0.865108, -0.033518, 0.670643, -0.181541, 0.166619, 0.468492, 1.425995]])
+result = model.score(X_test, y_test)
 print(result)
 
 
