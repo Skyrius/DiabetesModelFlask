@@ -1,4 +1,4 @@
-json={'Pregnancies': 1,'Glucose': 167,'BloodPressure': 74,'SkinThickness': 17,'Insulin': 144,'BMI': 23.4,'DiabetesPedigreeFunction': 0.477,'Age': 33}
+json={'Pregnancies': 0.639947,'Glucose': 0.865108,'BloodPressure': -0.033518,'SkinThickness': 0.670643,'Insulin': -0.181541,'BMI': 0.166619,'DiabetesPedigreeFunction': 0.468492,'Age': 1.425995}
 
 Pregnancies	Glucose	BloodPressure  SkinThickness Insulin  BMI	DiabetesPedigreeFunction  Age  Outcome
 0.639947, 0.865108, -0.033518, 0.670643, -0.181541, 0.166619, 0.468492, 1.425995				1
