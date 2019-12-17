@@ -18,12 +18,13 @@ def upload():
                 row = model.predict([list(diabetes_data.iloc[i, :])])
                 result.append(row[0])
 
-            return render_template('upload.html', result_list=result)
+            listToStr = ' '.join([str(elem) for elem in result])
+            return render_template('DiabetesPrediction.html', result_list="The result list is: ["+listToStr+"] (1 = diabetes, 0 = no diabetes)")
 
         except ValueError:
-            return render_template("upload.html", result_list="Invalid format")
+            return render_template("DiabetesPrediction.html", result_list="Invalid format")
 
-    return render_template('upload.html')
+    return render_template('DiabetesPrediction.html', result_list="")
 
 if __name__ == '__main__':
     app.run(debug=True)
